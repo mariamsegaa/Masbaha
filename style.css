@@ -1,0 +1,126 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  direction: rtl;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #c2185b;
+}
+
+.counter-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #f48fb1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#tasbeehBtn {
+  background-color: #ec407a;
+  color: white;
+}
+
+#tasbeehBtn:hover {
+  background-color: #d81b60;
+}
+
+#resetBtn {
+  background-color: #fce4ec;
+  color: #880e4f;
+  border: 2px solid #f8bbd0;
+}
+
+#resetBtn:hover {
+  background-color: #f8bbd0;
+}
+
+label {
+  font-size: 18px;
+  color: #880e4f;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#zikrSelect {
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #f8bbd0;
+  background-color: #fff0f5;
+  color: #880e4f;
+  outline: none;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#zikrSelect:hover {
+  border-color: #ec407a;
+  box-shadow: 0 0 8px rgba(236, 64, 122, 0.3);
+}
+
+#zikrSelect:focus {
+  border-color: #d81b60;
+  box-shadow: 0 0 10px rgba(216, 27, 96, 0.4);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #zikrSelect {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .counter-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .counter-text {
+    font-size: 36px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding: 0.8rem 1rem;
+  }
+}
